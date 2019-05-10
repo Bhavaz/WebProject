@@ -1,0 +1,25 @@
+<!--<div>-->
+<!--  NickName: <input type="text" [(ngModel)]="userName">-->
+<!--  <button (click)="setUserName()"> Set UserName</button>-->
+
+<!--</div>-->
+
+
+<div>
+  <p>Active users:</p>
+  <div *ngFor="let user of activeUsers">
+    <span>{{ user }} </span>
+    <span><button (click)="showMessageBox(user)"> Send Message</button></span>
+  </div>
+</div>
+
+
+<div *ngIf="showBox">
+  <span>Send message to: {{toUser}}</span>
+  <textarea [(ngModel)]="message"></textarea>
+  <button (click)="sendMessage()"> Send Message</button>
+</div>
+
+<div>
+  <span>{{receivedMessage}}</span>
+</div>

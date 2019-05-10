@@ -1,0 +1,17 @@
+<form class="col-lg-4 formStyle">
+  <div class="form-group">
+    <h2 style="color: white"> Sign in to Connect Plus</h2>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control form-control-lg control-label" name="email" placeholder="User Name" [(ngModel)]="emailID"/>
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control form-control-lg control-label" name="password" placeholder="Password" [(ngModel)]="password"/>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary vipra-blue-button width-100" (click)="userLogin()">Login</button>
+  </div>
+  <div class="">
+    <a routerLink="/" class="vipra-blue-text" style="color: white">Don't have an account? Sign up</a>
+  </div>
+</form>
